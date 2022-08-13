@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="sticky-top nav">
+    <button mat-icon-button class="example-icon " aria-label="Example icon-button with menu icon">
+        <mat-icon aria-hidden="true" class="model-signup-home home" aria-label="Example home icon" [routerLinkActive]="'active'" routerLink="/mobile-list">home</mat-icon>
+    </button>
+        
+    
+    <span>Mobile Manufacturer App</span>
+    <button mat-raised-button color="primary" [routerLinkActive]="'active'" routerLink="/mobile-details" class="model-signup-home view">View Mobile details</button>
+            
+    <span class="example-spacer"></span>
+            <button mat-raised-button color="primary" [routerLinkActive]="'active'" routerLink="/add-mobile" class="model-signup-home">Add New Model</button>
+            <button mat-raised-button color="primary" class="model-signup-home signup">Login
+            </button>
+</mat-toolbar>
+
+

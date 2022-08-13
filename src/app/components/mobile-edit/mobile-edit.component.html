@@ -1,0 +1,83 @@
+<div class="row justify-content-center">
+    <div class=" col-md-4 add-model">
+      <div class="card card-outline-secondary">
+        <div class="card-body ">
+          <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+  
+              <div class="row mb-3">
+                <label for="modelname" class="col-m-4 col-form-label">Model Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" formControlName="modelname" required>
+                  <div class="invalid-feedback"  *ngIf="submitted && myForm['modelname'].errors?.['required']">
+                    Model name is required.
+                  </div>
+                </div>
+              </div>
+            
+              <div class="row mb-3">
+                <label for="modelyear" class="col-m-4 col-form-label">Model Year</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" formControlName="modelyear" required>
+                  <div class="invalid-feedback" *ngIf="submitted && myForm['modelyear'].errors?.['required']">
+                    Enter Model year.
+                  </div>
+                </div>
+              </div>
+            
+              <div class="row mb-3">
+                <label for="processor" class="col-m-4 col-form-label">Processor Type</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" formControlName="processor" required>
+                  <div class="invalid-feedback"
+                  *ngIf="submitted && myForm['processor'].errors?.['required']">
+                    Enter Processor type.
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                  <label for="storage" class="col-m-4 col-form-label">Ram and Storage</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" 
+                    formControlName="storage" required>
+                    <div class="invalid-feedback"
+                    *ngIf="submitted && myForm['storage'].errors?.['required']">
+                    Enter Ram and Storage.</div>
+                  </div>
+              </div>
+            
+              <div class="row mb-3">
+                  <label for="color" class="col-m-4 col-form-label">Available Colors</label>
+                  <div class="col-sm-10">
+                      <input type="text" class="form-control" formControlName="color" required>
+                  <div class="invalid-feedback"
+                  *ngIf="submitted && myForm['color'].errors?.['required']">
+                    Enter available colors.</div>
+                  </div>
+              </div>
+            
+              <div class="row mb-3">
+                <label for="price" class="col-m-4 col-form-label">Price</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" formControlName="price" required>
+                  <div class="invalid-feedback"
+                  *ngIf="submitted && myForm['price'].errors?.['required']">
+                    Enter mobile price.</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-success btn-lg btn-block" type="submit">
+                  Update
+                </button>
+              </div>
+            
+              
+            </form>
+  
+      </div>                  
+        
+        
+      </div>
+        
+    </div>
+  </div>
+  

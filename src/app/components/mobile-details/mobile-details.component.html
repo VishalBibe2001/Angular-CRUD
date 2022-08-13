@@ -1,0 +1,36 @@
+<div>
+    <!-- No data message -->
+    <p *ngIf="Mobile.length <= 0" class="no-data text-center">
+      There is no mobile model added yet!
+    </p>
+  
+    <!-- Mobile list -->
+    <table class="table table-bordered" *ngIf="Mobile.length > 0">
+      <thead class="table-success">
+        <tr>
+          <th scope="col">Mobile ID</th>
+          <th scope="col"> Model Name</th>
+          <th scope="col">Model year</th>
+          <th scope="col">Processor Type</th>
+          <th scope="col">Ram and Storage</th>
+          <th scope="col">Available colors</th>
+          <th scope="col">Price</th> 
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let mobile of Mobile; let i = index">
+          <th scope="row">{{ mobile._id }}</th>
+          <td>{{ mobile.modelname }}</td>
+          <td>{{ mobile.modelyear }}</td>
+          <td>{{ mobile.processor }}</td>
+          <td>{{ mobile.storage }}</td>
+          <td>{{ mobile.color }}</td>
+          <td>{{ mobile.price }}</td> 
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+

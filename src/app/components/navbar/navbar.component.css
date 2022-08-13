@@ -1,0 +1,21 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.example-icon{
+  margin-left: 87px;
+}
+
+.model-signup-home:hover{
+   background-color: white;
+   color: #3f51b5;
+}
+.signup{
+  margin-left: 10px;
+  margin-right: 100px;
+}
+.home{
+    border-radius: 2px;
+}
+.view{
+margin-left: 20px;
+}
