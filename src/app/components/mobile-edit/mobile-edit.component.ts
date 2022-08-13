@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Mobile } from 'src/app/model/Mobile';
 import { ActivatedRoute,Router } from '@angular/router';
 import { ApiService } from 'src/app/service/api.service';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
@@ -12,12 +12,12 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class MobileEditComponent implements OnInit {
   submitted = false;
-  editForm: FormGroup;
+  editForm: UntypedFormGroup;
   mobileData: Mobile[];
   
 
   constructor(
-    public fb: FormBuilder,
+    public fb: UntypedFormBuilder,
     private actRoute: ActivatedRoute,
     private apiService: ApiService,
     private router: Router

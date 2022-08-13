@@ -1,7 +1,7 @@
 import { Component, OnInit,NgZone } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/service/api.service';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
@@ -11,9 +11,9 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class MobileAddComponent implements OnInit {
   submitted = false;
-  mobileForm: FormGroup;
+  mobileForm: UntypedFormGroup;
   constructor(
-    public fb: FormBuilder,
+    public fb: UntypedFormBuilder,
     private router: Router,
     private ngZone: NgZone,
     private apiService: ApiService

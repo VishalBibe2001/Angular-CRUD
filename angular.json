@@ -107,6 +107,5 @@
         }
       }
     }
-  },
-  "defaultProject": "mean-stack-crud-app"
+  }
 }
